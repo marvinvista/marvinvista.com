@@ -19,6 +19,10 @@ body {
   display: inline-block;
   color: #008cdd;
 }
+
+#menu li a:hover {
+	color: #292e31;
+}
 #right {
   height: 1px;
   float: right;
