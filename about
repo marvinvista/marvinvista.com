@@ -3,12 +3,13 @@
 <head>
 	<link rel="stylesheet" href="/static/style.css">
  	<meta charset="utf-8">
-	<title>Home · Marvin Vista</title>
+	<title>About · Marvin Vista</title>
 </head>
 <body>
 <div id="menu">
 <span class="title">Marvin Vista</span>
 <ul>
+  <li><a href="/about">About</a></li>
   <li><a href="https://www.linkedin.com/in/marvinvista/">LinkedIn</a></li>
   <li><a href="https://twitter.com/marvinvista">Twitter</a></li>
 </ul>
