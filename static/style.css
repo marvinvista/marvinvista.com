@@ -29,3 +29,12 @@ body {
   margin: 0;
   padding: 0;
 }
+#content {
+  margin-top: 15px;
+  float: left;
+  width: 500px;
+}
+#content p, #content ul {
+  color: #333;
+  line-height: 18px;
+}
