@@ -19,3 +19,13 @@ body {
   display: inline-block;
   color: #0864c7;
 }
+#right {
+  height: 1px;
+  float: right;
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
