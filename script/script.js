@@ -20,7 +20,6 @@
       const a3 = annotate($('a.link'), { type: 'underline', color: '#3ecf8e', animate: false, padding: 3});
       const a4 = annotate($('a.email'), { type: 'underline', color: '#3ecf8e', animate: false, padding: 3});
       const a5 = annotate($('a.twitter'), { type: 'underline', color: '#3ecf8e', animate: false, padding: 3});
-      const a6
 
     //   const ag = annotationGroup([a1, a2, a3]);
       a1.show();
