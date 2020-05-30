@@ -161,9 +161,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: inherit; text-decoration: none;}
+  color: #06b27e;}
 a:hover {
-  color: cursor: pointer;}
+  color: #06b27e; cursor: pointer;}
 
 
 /* Buttons
