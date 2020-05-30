@@ -15,7 +15,11 @@
   
     {
       // top
-      const a1 = annotate($('h4'), { type: 'highlight', color: '#FFF176', strokeWidth: '2px'});
-      const ag = annotationGroup([a1]);
-      ag.show();
+      const a1 = annotate($('h4'), { type: 'highlight', color: '#FFF176'});
+      const a2 = annotate($('h6'), { type: 'box', color: '#FFF176'});
+      const a3 = annotate($('a'), { type: 'underline', color: '#3ecf8e', animationDuration: 500});
+    //   const ag = annotationGroup([a1, a2, a3]);
+      a1.show();
+      a2.show();
+      a3.show();
     }})();
