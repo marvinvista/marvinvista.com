@@ -161,9 +161,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #06b27e;}
+  color: #06b27e; font-weight: 600; text-decoration: none; transition: color .1s ease;}
 a:hover {
-  color: #06b27e; cursor: pointer;}
+  color: #32325D; cursor: pointer;}
 
 
 /* Buttons
