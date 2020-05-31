@@ -60,10 +60,11 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
   <div class="row">
-    <div class="one column" style="margin-top: 10%;">
+    <div class="two columns" style="margin-top: 10%;">
+      <p><a href="index.html">← Back</a></p>
     </div>
     <div class="seven columns" style="margin-top: 10%;">
-      <p><a href="https://www.kunle.app/feb-2020-permissionless-issuing.html" target="_blank">The default banking-as-a-service platform will be developer-first [kunle.app]</a></p>
+      <h5><a href="https://www.kunle.app/feb-2020-permissionless-issuing.html" target="_blank">The default banking-as-a-service platform will be developer-first 🔗</a></h5>
       <p><strong>The developer-first default</strong></p>
       <ul>
         <li>The default addresses most developer use cases from the very beginning</li>
@@ -92,9 +93,73 @@
                 <li>The card is being used for purchases</li>
               </ul>
           </ul>
+        <li>Switching to a new instrument requires high motivation, ability, and effort i.e. re-linking bills, updating cards, accounts and routing, etc.</li>
       </ul>
+      <p><strong>Issuer-Processors and Banking-as-a-Service (BaaS) providers</strong></p>
       <ul>
-
+        <li>Issues cards</li>
+        <li>Assigns card numbers</li>
+        <li>Processes card payments</li>
+        <li>Maintains cardholder name/dob, among others</li>
+        <li>Sometimes manages balances</li>
+      </ul>
+      <p><strong>The current state of card or bank account issuing</strong></p>
+      <ul>
+        <li>A customer still needs to fill up forms and talk to people i.e. sales before getting an API</li>
+        <li>Issuer-processors and BaaS providers are mostly driven by sales</li>
+        <li>Customers realize too late that the the BaaS platform they selected are not right for them. At the point when contracts were already signed, deliverables are already embedded to the customer's goals, implementation is under way, and product trade-offs are made.</li>
+        <li>Issuers lose customers when switching Issuer-Processing / ACH processing platforms since they also have to switch the account / routing issued to a customer.</li>
+      </ul>
+      <p><strong>Why a developer-first card issuing platform still doesn't exist</strong></p>
+      <ul>
+        <li>High risk - A bank is needed to issue a card. An unknown entity that issues a financial instrument (and funds and transacts on that) poses a high amount of regulatory and financial risk for a bank e.g. the entity issuing a card to a bad actor can put the bank's business at risk.</li>
+        <li>Large fixed costs - Sales and account management teams lead to high fixed costs (recurring). Most issuer-processors / BaaS platforms pass these costs to their customers. These costs are high enough to become barriers for startups and developers to get started.</li>
+      </ul>
+      <p><strong>Use cases</strong></p>
+      <ul>
+        <li>Engineers can issue a card over the weekend or during hackathons, with less risk and potentially eliminating the need for a BD person.</li>
+        <li>Startup companies can easily issue a card.</li>
+        <li>Neobanks can start and scale a second stack to:</li>
+          <ul>
+            <li>Load balance</li>
+            <li>Add redundancy</li>
+            <li>Add business continuity</li>
+            <li>Ensure that their primary bank/processor stack competes on economics and quality</li>
+        </ul>
+        <li>Legacy banks can conduct low-cost, low-risk experiments. The reduced cost can then be passed to consumers through lower fees (if not eliminating them entirely).</li>
+      </ul>
+      <p><strong>Become the default way to issue cards / bank accounts for developers</strong></p>
+      <ul>
+        <li>Developer-first onboarding - A developer can issue, fund, and transact on a card / bank account prior to talking with anyone from your company</li>
+      </ul>
+      <p><strong>Go-to-market strategy for issuer-processors or BaaS platforms</strong></p>
+      <ul>
+        <li>Sell better to customers</li>
+        <ul>
+          <li>Have a sales team that is better than the competition at finding and selling to banks or issuer fintechs that want to either switch to or add a new BaaS platform.</li>
+        </ul>
+        <li>Be less expensive for customers</li>
+        <ul>
+          <li>You should financially cost less for banks and issuer fintechs to onboard with and use</li>
+          <li>Your basic services should be inexpensive and configurable</li>
+          <li>Charge add-ons w/ fee per account per month</li>
+          <li>The bank / issuer fintech should be able to optimize their costs through the fees they want to pay by making them choose:</li>
+          <ul>
+            <li>What services they want to use</li>
+            <li>What costs they can pass on to consumers</li>
+          </ul>
+        </ul>
+        <li>Be easier to use for customers</li>
+        <ul>
+          <li>Make it easy for developers to use</li>
+          <li>The API interface should be simple enough for a developer to use end-to-end without talking to a human being, making it easy to write a program.</li>
+          <li>A bank or issuer fintech can evaluate the product first, align internally, before talking to you.</li>
+          <li>Banks and issuer fintechs should be able to try try your BaaS platform without incurring the biggest cost:</li>
+          <ul>
+            <li>Getting the organization aligned</li>
+            <li>Getting the necessary operating and engineering resources to support a new bank stack</li>
+          </ul>
+        </ul>
       </ul>
     </div>
 
