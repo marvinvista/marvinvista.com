@@ -70,7 +70,7 @@
         <li>The default addresses most developer use cases from the very beginning</li>
         <li>For the use cases that the default doesn't solve, either the developers won't need them at their current state, or those are something that they can build for themselves</li>
       </ul>
-      <p><strong>Examples of developer-first default businesses</strong></p>
+      <p><strong>Examples of default businesses</strong></p>
       <ul>
           <li>Starting an online store → Shopify</li>
           <li>Collecting payments → Stripe</li>
@@ -160,6 +160,94 @@
             <li>Getting the necessary operating and engineering resources to support a new bank stack</li>
           </ul>
         </ul>
+      </ul>
+      <p><strong>Attributes of a developer-first, issuing platform</strong></p>
+      <ul>
+        <li>A developer should be able to do the following before talking to anyone on your team:</li>
+        <ul>
+          <li>Sign up</li>
+          <li>Verify their identity</li>
+          <li>Get API access</li>
+          <li>Issue and transact on a limited number of cards / bank accounts</li>
+        </ul>
+        <li>To satisfy the bank's requirements:</li>
+        <ul>
+          <li>The API should encode everything the developer needs to set i.e.:</li>
+          <ul>
+            <li>The developer's identity and acceptance of agreements</li>
+            <li>The card holder's identity and acceptance of agreements</li>
+          </ul>
+        </ul>
+        <li>The API should request and verify additional information i.e. IDs, selfie without the need for a separate integration with a KYC provider</li>
+        <li>A developer can transact up to certain limit, and can provide additional information to lift the limit programatically:</li>
+          <ul>
+            <li>Limit the number of cards than can be issued</li>
+            <li>Each card can only do a max number of transactions per week</li>
+            <li>There is a per-transaction limit and total transaction volume limit</li>
+          </ul>
+         <li>A low-cost starting point: default card, bank, and usage configuration that serves as a low-cost starting point</li> 
+         <li>Customizable card design (gets more custom at scale)</li>
+         <p><strong>Power law dynamics</strong></p>
+         <ul>
+           <li>To embed power law dynamics, you need to become the low-cost, default card issuer or BaaS provider that is developer-first, allowing customers to experiment with card issuing</li>
+           <li>Power law is then triggered once customers start generating billions in transaction volume</li>
+         </ul>
+         <p><strong>Meta-bins and meta-routing numbers: Why are they needed?</strong></p>
+         <ul>
+           <li>Banks, issuer-processors, and BaaS providers have leverage over card issuers</li>
+            <ul>
+              <li>The banks</li>
+                <ul>
+                  <li>Own the bin and routing number</li>
+                  <li>Directly interface with Visa and Mastercard</li>
+                </ul>
+              <li>The issuer-processors and BaaS providers</li>
+                <ul>
+                  <li>Manage the BIN on behalf of the bank</li>
+                  <li>Assign sub-BIN ranges to customers that want to issue cards</li>
+                </ul>
+            </ul>
+           <li>If a card issuer with millions of customers wants to change their bank (portfolio migration), issuer-processor, or BaaS provider, they have to resend millions of new cards to their customers. To do that:</li>
+           <ul>
+             <li>The card issuer will pay the costs of creating and shipping the cards, along with other resources without adding to revenue</li>
+             <li>Customers have to accept a new agreements, activate the card, and re-link them to all the relevant places i.e. Netflix, Spotify</li>
+           </ul>
+         </ul>
+         <p><strong>Meta-bins and meta-routing numbers: What will they look like?</strong></p>
+         <ul>
+           <li>Make BINs portable</li>
+            <ul>
+              <li>Revisit the rule that BINs can only be owned by banks that are principal members in Visa and Mastercard</li>
+            </ul>
+           <li>The meta-bin</li>
+            <ul>
+              <li>A BIN range owned by the issuer and managed by the issuer-processor or BaaS provider</li>
+              <li>With the meta-bin, the issuer can do a portfolio migration without resending cards to customers</li>
+              <li>Visa or Mastercard could then direct incoming authorization traffic and settlement messages to the issuer-processor or BaaS provider selected by the issuer</li>
+              <li>The meta-bin lessens the negative impact to cardholders when an issuer changes banks, issuer-processors, or BaaS providers</li>
+            </ul>
+           <li>The meta-routing number</li>
+            <ul>
+              <li>Owned by the issuer</li>
+              <li>Similar to the meta-bin, cardholders don't have to enter a new account / routing number when the issuer changes their bank</li>
+            </ul>
+         </ul>
+         <p><strong>Which comes first?</strong></p>
+         <ul>
+           <li>Make it easy to start issuing cards and bank accounts by creating a developer-first issuing platform</li>
+            <ul>
+              <li>An organizational design problem</li>
+              <li>BaaS platforms already have the technical foundations to do this</li>
+              <li>BaaS platforms have to convince bank partners that this is worth doing</li>
+            </ul>
+           <li>Make it easy for issuers to change banks, issuer-processors, and BaaS providers by creating a meta-bin and meta-routing platform</li>
+            <ul>
+              <li>A business innovation problem</li>
+              <li>There is a material technical challenge because this is a new concept</li>
+              <li>Convince the credit card networks that this should exist</li>
+              <li>Get traction and from the developer-first platform and use that to convince Visa and Mastercard that this should be done</li>
+            </ul>
+         </ul>
       </ul>
     </div>
 
